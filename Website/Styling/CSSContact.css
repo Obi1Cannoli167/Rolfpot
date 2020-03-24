@@ -1,0 +1,109 @@
+body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./../Images/27348184-universe-wallpapers.jpg);
+    object-fit: cover;
+    background-size: 2560px 2160px;
+}
+headLine {
+    font-size: 2cm;
+
+
+}
+#Hedd {
+    font-size: 3cm;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1cm;
+    margin-left: 5cm;
+    margin-right: 5cm;
+    margin-bottom: auto;
+    text-align: center;
+    font-weight: 900;
+
+
+}
+#sect {
+    border-width: 1cm;
+    border-radius: 1em;
+    border-style: double;
+    margin-right: 1cm;
+    margin-left: 1cm;
+    border-radius: 2cm 2cm 0 0;
+}
+header {
+    background-image: url(./../Images/Aluminum-Metal-Sheet-Texture.jpg);
+    margin-left: 5cm;
+    margin-right: 5cm;
+    margin-bottom: 1cm;
+    border-radius: 20px 20px 0 0;
+    filter: opacity(0.7);
+
+
+
+}
+nav {
+    background-color: skyblue;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 2em;
+    opacity: 0.7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 5cm;
+    margin-right: 5cm;
+    margin-bottom: -1cm;
+}
+#hedd1 {
+    font-size: 2cm;
+    font-weight: 700;
+    text-align: center;
+    background-image: url(./../Images/Aluminum-Metal-Sheet-Texture.jpg);
+    border-radius: 0 0 20px 20px;
+    color: rgb(15, 15, 15);
+    margin-right: 3cm;
+    margin-left: 3cm;
+    margin-top: 1cm;
+    filter: brightness(1.428);
+}
+section {
+    display: block;
+    margin-top: 2cm;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    margin-bottom: 1cm;
+    padding-left: 1cm;
+    padding-right: 1cm;
+    padding-bottom: 1cm;
+    background-color: skyblue;
+    opacity: 0.7;
+    border-radius: 4cm 4cm 1em 1em;
+}
+p {
+    color: rgb(19, 19, 19);
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+#conFL {
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#conFL div {
+    flex: 1;
+    margin: auto;
+}
+#phone {
+    display: block;
+    height: 340px;
+    width: 500px;
+
+}
+#mail {
+    display: block;
+    height: 500px;
+    width: 500px;
+    margin-top: -3cm;
+    margin-bottom: -3cm;
+}
