@@ -3,12 +3,15 @@ body {
     background-repeat: no-repeat;
     background-image: url(./../Images/27348184-universe-wallpapers.jpg);
     object-fit: cover;
-    background-size: 2560px 2160px;
+
 }
 headLine {
     font-size: 2cm;
 
 
+}
+a:hover {
+    background-color: azure; color: black;
 }
 #Hedd {
     font-size: 3cm;
@@ -20,7 +23,6 @@ headLine {
     text-align: center;
     font-weight: 900;
 
-
 }
 #sect {
     border-width: 1cm;
@@ -28,16 +30,16 @@ headLine {
     border-style: double;
     margin-right: 2cm;
     margin-left: 2cm;
-    border-radius: 2cm 2cm 0 0;
+    border-radius: 1cm 1cm 0 0;
 }
 header {
     background-image: url(./../Images/Aluminum-Metal-Sheet-Texture.jpg);
     margin-left: 5cm;
     margin-right: 5cm;
     margin-bottom: 1cm;
+    padding-top: 1em;
     border-radius: 20px 20px 0 0;
     filter: opacity(0.7);
-
 
 
 }
@@ -74,7 +76,7 @@ section {
     padding-bottom: 1cm;
     background-color: skyblue;
     opacity: 0.7;
-    border-radius: 4cm 4cm 1em 1em;
+    border-radius: 1.5cm 1.5cm 1em 1em;
 }
 p {
     color: rgb(19, 19, 19);
@@ -88,11 +90,6 @@ p {
 }
 .hili {
     background-color: yellow;
-}
-#solo {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
 }
 #Rolf {
     display: block;
