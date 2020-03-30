@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    background-color: blue;
+    padding: 1px;
+    margin: auto;
+    text-align: end;
+    font-size: 4em;
+    color: chartreuse;
+    
+}
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+article {
+    float: left;
+    background-color: cornflowerblue;
+    padding: 1em;
+    width: 60%;
+    height: 500px;
+}
+nav {
+    float: left;
+    width: 40%;
+    background-color: cornsilk;
+    padding: 2em;
+    height: 500px;
+}
+@media (max-width: 770px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+p, h1, h2, h3 {
+    white-space: normal;
+}
+footer {
+    background-color: crimson;
+    padding: 1em;
+    text-align: center;
+    color: darkblue;
+}

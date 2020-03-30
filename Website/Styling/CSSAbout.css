@@ -1,9 +1,11 @@
-body {
+body, html {
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(./../Images/27348184-universe-wallpapers.jpg);
-    object-fit: cover;
-
+    background-image: url(./../Images/it1636a7.bmp);
+    object-fit: cover; 
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;  
 }
 headLine {
     font-size: 2cm;
@@ -62,16 +64,16 @@ nav {
     background-image: url(./../Images/Aluminum-Metal-Sheet-Texture.jpg);
     border-radius: 0 0 20px 20px;
     color: rgb(15, 15, 15);
-    margin-right: 4cm;
-    margin-left: 4cm;
+    margin-right: 4.36cm;
+    margin-left: 4.36cm;
     margin-top: 1cm;
     filter: brightness(1.428);
 }
 section {
     display: block;
     margin-top: 2cm;
-    margin-left: 1cm;
-    margin-right: 1cm;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
     margin-bottom: 1cm;
     padding-bottom: 1cm;
     background-color: skyblue;
