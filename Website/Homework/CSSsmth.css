@@ -1,0 +1,22 @@
+section {
+    position: fixed;
+    background-color: lawngreen;
+    width: 700px;
+    height: 500px;
+    bottom: 0;
+    right: 0;
+}
+#bigb {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+}
+#smab {    
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 400px;
+    right: 500px;
+    background-color: red;
+}
