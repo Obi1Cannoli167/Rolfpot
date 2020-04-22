@@ -1,0 +1,32 @@
+ .main {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.pepa img {
+    width: 400px;
+}
+.products {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 20%;
+}
+.pepa h2 {
+    text-align: center;
+    line-height: 200%;
+}
+div .stock {
+    z-index: 1;
+    background-color: red;
+    display: inline-block;
+    position: absolute;
+    bottom: 14%;
+    left: 30%;
+}
+.pepa {
+    border: 1px solid black
+}
