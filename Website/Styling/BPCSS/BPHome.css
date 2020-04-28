@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,11 +8,8 @@
 html {
     overflow-y: scroll;
 }
-body .otherstuff{
-    padding-top: 8vh;
-}
-span {
-    color: hsl(221, 15%, 21%);
+body .otherstuff {
+    padding-top: 12vh;
 }
 a, li, h1, h2, p {
     font-family: 'Montserrat', sans-serif;
@@ -38,8 +36,10 @@ header {
     width: 100%;
     background-color: hsl(0, 0%, 9%);
     position: fixed;
-    box-shadow: 0px 2px 20px 10px hsl(0, 0%, 100%);
+    box-shadow: 0px 1px 10px 8px hsl(0, 0%, 100%);
     z-index: 1;
+    animation: smallglow 1s linear infinite alternate;
+    -webkit-animation: smallglow 1s linear infinite alternate;
 
 }
 header h1, li {
@@ -66,23 +66,18 @@ section {
 }
 
 .logo {
-    display: flex;
-    height: 60px;
     background-color: hsl(0, 0%, 9%);
     float: left;
     letter-spacing: 8px;
-    padding-top: 6px;
-}
-.diamond {
-    display: flex;
-    position: relative;
-    top: -4px;
-    height: 60px;
-    background-color: hsl(0, 0%, 9%);
-    user-select: none;
+    vertical-align: middle;
+    animation: glow 1s ease-in-out infinite alternate;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
 }
 .myweb {
     user-select: none;
+    font-size: 330%;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
 }
 .nav__links {
     list-style: none;
@@ -93,9 +88,10 @@ section {
     display: inline-block;
     padding: 0px 20px;
     background-color: hsl(0, 0%, 9%);
+    vertical-align: middle;
 }
 .nav__links li a {
-    transition: all 0.2s ease 0s;
+
     font-weight: 700;
     font-size: 1.3em;
 }
@@ -103,9 +99,16 @@ section {
     background-color: hsl(0, 0%, 9%);
     color: skyblue;
     font-size: 90%;
+    transition: font-size 0.8s;
 }
 .nav__links li a:hover {
     color: #0088a9;
+    font-size: 240%;
+}
+.nav__links li a img:hover {
+    height: 65px;
+    transition: height 0.2s;
+    transition-timing-function: ease-in-out;
 }
 @media screen and (min-width:1500px) {
     .nav__links {
@@ -119,6 +122,9 @@ section {
         height: 75px;
         position: relative;
         top: -6px;
+    }
+    body .otherstuff {
+        padding-top: 14vh;
     }
 }
 @media screen and (max-width:1000px) {
@@ -154,11 +160,29 @@ section {
     }
 
 }
-.welcome {
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 3px hsl(0, 0%, 100%), 0 0 6px hsl(0, 0%, 100%), 0 0 9px hsl(330, 100%, 45%), 0 0 12px hsl(330, 100%, 45%), 0 0 15px hsl(330, 100%, 45%), 0 0 18px hsl(330, 100%, 45%), 0 0 21px hsl(330, 100%, 45%);
+      }
+      
+      to {
+        text-shadow: 0 0 6px hsl(0, 0%, 100%), 0 0 9px hsl(224, 100%, 86%), 0 0 12px hsl(224, 100%, 86%), 0 0 15px hsl(224, 100%, 86%), 0 0 18px hsl(224, 100%, 86%), 0 0 21px hsl(224, 100%, 86%), 0 0 24px hsl(224, 100%, 86%);
+      }
+} 
+@-webkit-keyframes smallglow {
+    from {
+        text-shadow: 0 0 1px hsl(0, 0%, 100%), 0 0 3px hsl(0, 0%, 100%), 0 0 5px hsl(330, 100%, 45%), 0 0 7px hsl(330, 100%, 45%), 0 0 9px hsl(330, 100%, 45%), 0 0 11px hsl(330, 100%, 45%), 0 0 13px hsl(330, 100%, 45%);
+      }
+      
+      to {
+        text-shadow: 0 0 3px hsl(0, 0%, 100%), 0 0 4px hsl(224, 100%, 86%), 0 0 5px hsl(224, 100%, 86%), 0 0 6px hsl(224, 100%, 86%), 0 0 7px hsl(224, 100%, 86%), 0 0 8px hsl(224, 100%, 86%), 0 0 9Aapx hsl(224, 100%, 86%);
+      }
+} 
+.welcome h2{
     text-align: center;
-    font-size: 2.5em;
+    font-size: 5em;
     text-shadow: 0px 3px 2px #f0f0f0;
-    font-weight: 100;
+    font-weight: 900;
 }
 .a__img {
     border-radius: 0.4em;
@@ -217,6 +241,10 @@ section {
 .desc {
     font-size: 75%;
     max-width: 500px;
+}
+.langflag {
+    height: 40px;
+    display: block;
 }
 .imgframe img {
     display: block;
