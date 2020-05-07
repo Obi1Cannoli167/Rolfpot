@@ -6,3 +6,32 @@
     box-sizing: border-box;
     overflow-wrap: break-word;
 }
+html {
+    background-image: url(../../Images/Heaven.jpg);
+    object-fit: cover;
+    background-size: 100vw 100vh;
+    z-index: -10;
+
+}
+.sign h1 {
+    text-align: center;
+    font-size: 4vw;
+    color: royalblue;
+}
+.junction_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'Tangerine';
+    text-transform: uppercase;
+    margin: -20vw 0 0 -35vw;
+    width: 70vw;
+    height: 40vw;
+    background-color: hsla(150, 83%, 84%, 0.253);
+    display: block;
+    border-radius: 2vw;
+    box-shadow: 0px 0px 2vw hsla(0, 0%, 4%, 0.267);
+}
+.sign {
+    padding: 1cm;
+}

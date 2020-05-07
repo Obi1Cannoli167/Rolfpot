@@ -7,11 +7,6 @@ body, html {
     padding: 0;
     background-attachment: fixed;  
 }
-headLine {
-    font-size: 2cm;
-
-
-}
 a:hover {
     background-color: azure; color: black;
 }
