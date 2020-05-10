@@ -84,6 +84,8 @@ section {
     list-style: none;
     background-color: hsl(0, 0%, 9%);
     user-select: none;
+    display: flex;
+    align-items: center;
 }
 .nav__links li {
     display: inline-block;
@@ -91,26 +93,24 @@ section {
     background-color: hsl(0, 0%, 9%);
     vertical-align: middle;
 }
-.nav__links li a {
-
+.nav__links a {
+    background-color: hsl(0, 0%, 9%);
+    color: hsl(197, 71%, 73%);
+    font-size: 90%;
+    transition: font-size 0.35s;
+    transition-timing-function: cubic-bezier(0.6, 0.5, 0.07, 1);
     font-weight: 700;
     font-size: 1.3em;
 }
-.nav__links a {
-    background-color: hsl(0, 0%, 9%);
-    color: skyblue;
-    font-size: 90%;
-    transition: font-size 0.8s;
-    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-}
 .nav__links li a:hover {
-    color: #0088a9;
-    font-size: 240%;
+    color: hsl(197, 71%, 88%);
+    font-size: 180%;
+    text-shadow: 0 0 6px hsl(0, 0%, 100%), 0 0 9px hsl(224, 100%, 86%), 0 0 12px hsl(224, 100%, 86%), 0 0 15px hsl(224, 100%, 86%), 0 0 18px hsl(224, 100%, 86%), 0 0 21px hsl(224, 100%, 86%), 0 0 24px hsl(224, 100%, 86%);
 }
 .nav__links li a img:hover {
-    height: 65px;
-    transition: height 0.2s;
-    transition-timing-function: ease-in-out;
+    height: 55px;
+    transition: height 0.25s;
+    transition-timing-function: cubic-bezier(0.6, 0.5, 0.07, 1);
 }
 @media screen and (min-width:1500px) {
     .nav__links {
@@ -248,10 +248,48 @@ section {
     font-size: 80%;
 }
 .langflag {
-    height: 40px;
+    height: 30px;
     display: block;
     border-radius: 4px;
-    
+
+}
+.langflag2 {
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+
+}
+.dropdown .langflag2{
+    position: absolute;
+    background-color: ivory;
+    top: auto;
+    right: 45px;
+}
+
+.dropdown_content {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.dropdown {
+    transform: translateY(-130%);
+    position: absolute;
+    opacity: 0.9;
+    z-index: 30;
+    display: flex;
+    right: 0;
+    justify-content: space-around;
+    align-items: center;
+    transition: cubic-bezier(0.6, 0.5, 0.07, 1) 0.15s;
+}
+.dropdown a {
+    padding: 2vh 10px;
+
+    display: flex;
+}
+.dropdown_content:hover .dropdown {
+    transform: translateY(0);
 }
 .imgframe img {
     display: block;
