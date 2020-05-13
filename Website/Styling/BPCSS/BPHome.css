@@ -13,6 +13,10 @@ a, li, h1, h2, p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     text-decoration: none;
+    text-shadow: 1px 1px 2px hsl(0, 0%, 9%);
+}
+p {
+    padding-bottom: 1em;
 }
 a {
     background-color: hsl(221, 15%, 21%);
@@ -31,7 +35,7 @@ header {
     width: 100%;
     background-color: hsl(0, 0%, 9%);
     position: fixed;
-    box-shadow: 0px 0px 2px 1px hsl(123, 50%, 69%), 0px 0px 6px 5px hsl(123, 50%, 55%), 0px 0px 10px 9px hsl(0, 0%, 0%);
+    box-shadow: 0px 0px 2px 1px hsl(39, 50%, 69%), 0px 0px 6px 5px hsl(91, 50%, 55%), 0px 0px 8px 9px hsl(0, 0%, 0%);
     z-index: 1;
 }
 header h1, li {
@@ -45,22 +49,23 @@ header h1, li {
     -webkit-animation: smallglow 1s linear infinite alternate;
 }
 hr {
-    border-width: 5px;
+    border-width: 1vh;
     border-style: solid;
     color: #202020;
     margin-top: 2em;
     margin-bottom: 2em;
-    border-radius: 2px;
+    border-radius: 1cm 1cm 100% 100%;
 }
 section {
-    padding: 1cm;
+    padding: 1cm 10vw 1cm 10vw;
     font-size: 140%;
     padding-top: 12vh;
+    min-height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../../Images/html-color-codes-color-tutorials-hero-00e10b1f.jpg);
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .logo {
@@ -68,14 +73,14 @@ section {
     float: left;
     letter-spacing: 8px;
     vertical-align: middle;
-    animation: glow 1s ease-in-out infinite alternate;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
 }
 .myweb {
     user-select: none;
     font-size: 330%;
     font-family: 'Orbitron', sans-serif;
     text-transform: uppercase;
+    animation: glow 1s ease-in-out infinite alternate;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
 }
 .nav__links {
     list-style: none;
@@ -184,22 +189,21 @@ section {
     border-radius: 0.4em;
 }
 .gridcontacts {
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-
 }
 .gridhome {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     display: grid;
     grid-gap: 2vw;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 .gridproducts {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     display: grid;
     grid-gap: 10px;
@@ -221,6 +225,7 @@ section {
 }
 .line hr {
     color: hsl(228, 5%, 71%);
+    border-width: 4px;
 }
 .line img {
     border-radius: 1.1cm;
