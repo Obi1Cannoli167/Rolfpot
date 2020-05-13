@@ -4,14 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: hsl(228, 5%, 71%);
     overflow-wrap: break-word;
 }
 html {
     overflow-y: scroll;
-}
-body .otherstuff {
-    padding-top: 12vh;
 }
 a, li, h1, h2, p {
     font-family: 'Montserrat', sans-serif;
@@ -26,9 +22,6 @@ h1 {
     font-size: 250%;
 
 }
-p {
-    margin-bottom: 1em;
-}
 header {
     display: flex;
     justify-content: space-around;
@@ -38,7 +31,7 @@ header {
     width: 100%;
     background-color: hsl(0, 0%, 9%);
     position: fixed;
-    box-shadow: 0px 0px 2px 1px hsl(0, 0%, 100%), 0px 0px 6px 5px hsl(0, 0%, 100%), 0px 0px 10px 9px hsl(199, 100%, 89%);
+    box-shadow: 0px 0px 2px 1px hsl(123, 50%, 69%), 0px 0px 6px 5px hsl(123, 50%, 55%), 0px 0px 10px 9px hsl(0, 0%, 0%);
     z-index: 1;
 }
 header h1, li {
@@ -60,10 +53,14 @@ hr {
     border-radius: 2px;
 }
 section {
-    padding-left: 1cm;
-    padding-right: 1cm;
+    padding: 1cm;
     font-size: 140%;
-    background-color: hsl(228, 5%, 71%);
+    padding-top: 12vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../Images/html-color-codes-color-tutorials-hero-00e10b1f.jpg);
+    object-fit: cover; 
 }
 
 .logo {
@@ -120,7 +117,7 @@ section {
         position: relative;
         top: -6px;
     }
-    body .otherstuff {
+    section {
         padding-top: 14vh;
     }
 }
@@ -188,7 +185,6 @@ section {
 }
 .gridcontacts {
     width: 75%;
-    height: 40vh;
     margin: 0 auto;
     display: grid;
     grid-gap: 20px;
@@ -197,7 +193,6 @@ section {
 }
 .gridhome {
     width: 80%;
-    height: 420px;
     margin: 0 auto;
     display: grid;
     grid-gap: 2vw;
@@ -205,7 +200,6 @@ section {
 }
 .gridproducts {
     width: 90%;
-    height: 50vh;
     margin: 0 auto;
     display: grid;
     grid-gap: 10px;
@@ -234,7 +228,6 @@ section {
     max-width: 240px;
 }
 .linegap {
-    background-color: hsl(228, 5%, 71%);
     height: auto;
     width: auto;
 }
