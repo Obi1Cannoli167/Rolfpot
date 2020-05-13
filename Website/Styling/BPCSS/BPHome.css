@@ -88,6 +88,7 @@ section {
     background-color: hsl(0, 0%, 9%);
     user-select: none;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 .nav__links li {
@@ -158,16 +159,15 @@ section {
     .nav__links li a {
         flex-direction: column;
     }
-
 }
 @keyframes boxglow {
     from {
         box-shadow: 0 0 4px hsl(0, 0%, 100%), 0 0 7px hsl(0, 0%, 100%), 0 0 10px hsl(330, 100%, 45%), 0 0 13px hsl(330, 100%, 45%), 0 0 16px hsl(330, 100%, 45%), 0 0 19px hsl(330, 100%, 45%), 0 0 22px hsl(330, 100%, 45%);
-      }
+    }
       
       to {
         box-shadow: 0 0 6px hsl(0, 0%, 100%), 0 0 9px hsl(224, 100%, 86%), 0 0 12px hsl(224, 100%, 86%), 0 0 15px hsl(224, 100%, 86%), 0 0 18px hsl(224, 100%, 86%), 0 0 21px hsl(224, 100%, 86%), 0 0 24px hsl(224, 100%, 86%);
-      }
+    }
 }
 @keyframes glow {
     from {
@@ -260,7 +260,7 @@ section {
 
 }
 .langflag2 {
-    height: 40px;
+    height: calc(40px + 1vw);
     display: block;
     border-radius: 50%;
     position: absolute;
