@@ -19,9 +19,6 @@ a, li, h1, h2, p {
 p {
     padding-bottom: 1em;
 }
-a {
-    background-color: hsl(221, 15%, 21%);
-}
 h1 {
     font-weight: 500;
     font-size: 250%;
@@ -41,11 +38,9 @@ header {
     z-index: 1;
 }
 header h1, li {
-    background-color: hsl(0, 0%, 9%);
     color: whitesmoke;
 }
 .nav__links a {
-    background-color: hsl(0, 0%, 9%);
     color: whitesmoke;
     animation: smallglow 1s linear infinite alternate;
     -webkit-animation: smallglow 1s linear infinite alternate;
@@ -53,10 +48,10 @@ header h1, li {
 hr {
     border-width: 1vh;
     border-style: solid;
-    color: #202020;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    border-radius: 1cm 1cm 100% 100%;
+    color: hsl(0, 0%, 13%);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 60% 60% 1cm 1cm;
 }
 section {
     padding: 1cm 10vw 1cm 10vw;
@@ -68,14 +63,35 @@ section {
     background-repeat: no-repeat;
     background-image: url(../../Images/html-color-codes-color-tutorials-hero-00e10b1f.jpg);
     object-fit: cover;
-    box-shadow: 0 0 400px hsla(0, 94%, 13%, 0.7) inset;
+}
+
+.second_section {
+    padding: 1cm 10vw 1cm 10vw;
+    font-size: 140%;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../Images/second\ html-color-codes-color-tutorials-hero-00e10b1f.jpg);
+    object-fit: cover;
+}
+
+.second_section .welcome h2 {
+    text-align: center;
+    font-size: calc(3em + 3vw);
+    font-weight: 900;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 -2px 2px hsl(230, 100%, 73%), 0 -4px 3px hsl(230, 100%, 63%), 0 -6px 4px hsl(230, 100%, 53%), 0 -10px 5px hsl(230, 100%, 43%), 0 -12px 7px hsl(230, 100%, 33%), 0 -14px 11px hsl(230, 100%, 23%);
+    color: hsl(221, 30%, 11%);
+}
+
+.second_section hr {
+    color: hsl(0, 0%, 6%);
 }
 
 .logo {
     background-color: hsl(0, 0%, 9%);
-    float: left;
     letter-spacing: 8px;
-    vertical-align: middle;
 }
 .myweb {
     user-select: none;
@@ -92,15 +108,14 @@ section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    transform: translateX(calc(-50px - 4vw));
 }
 .nav__links li {
     display: inline-block;
     padding: 0px 20px;
-    background-color: hsl(0, 0%, 9%);
     vertical-align: middle;
 }
 .nav__links a {
-    background-color: hsl(0, 0%, 9%);
     color: hsl(197, 71%, 80%);
     font-size: 90%;
     transition: font-size 0.23s;
@@ -108,11 +123,7 @@ section {
     font-weight: 700;
     font-size: 1.3em;
 }
-.nav__links li a:hover {
-    color: hsl(197, 71%, 92%);
-    font-size: 180%;
-    text-shadow: 0 0 6px hsl(0, 0%, 100%), 0 0 9px hsl(224, 100%, 86%), 0 0 12px hsl(224, 100%, 86%), 0 0 15px hsl(224, 100%, 86%), 0 0 18px hsl(224, 100%, 86%), 0 0 21px hsl(224, 100%, 86%), 0 0 24px hsl(224, 100%, 86%);
-}
+
 @media screen and (min-width:1500px) {
     .nav__links {
         padding: 0px 8px;
@@ -130,45 +141,137 @@ section {
         padding-top: 14vh;
     }
 }
+@media screen and (min-width:1000px) {
+    .gridproducts, .gridcontacts {
+        width: 73vw;
+    }
+    .langflag2 {
+        margin-left: 1.5vw;
+    }
+    .dropdown {
+        transform: translate(20px, -150%);
+        opacity: 0.9;
+    }
+    .nav__links li a:hover {
+        color: hsl(197, 71%, 92%);
+        font-size: 180%;
+        text-shadow: 0 0 6px hsl(0, 0%, 100%), 0 0 9px hsl(224, 100%, 86%), 0 0 12px hsl(224, 100%, 86%), 0 0 15px hsl(224, 100%, 86%), 0 0 18px hsl(224, 100%, 86%), 0 0 21px hsl(224, 100%, 86%), 0 0 24px hsl(224, 100%, 86%);
+    }
+    .dropdown_content:hover .dropdown {
+        transform: translateX(1.5vw);
+    }
+    .langflag {
+        height: calc(19px + 0.8vh);
+        width: calc(28px + 1.2vh);
+        display: block;
+        border-radius: 2px;
+    }
+    .line img {
+        border-radius: 1.1cm;
+        max-height: 240px;
+        max-width: 240px;
+    }
+}
 @media screen and (max-width:1000px) {
+    section {
+        padding-top: 2vh;
+    }
+    .dropdown_content:hover .dropdown {
+        transform: translateX(1.2vw);
+    }
+    .nav__links a:hover {
+        color: hsl(197, 71%, 92%);
+        font-size: 150%;
+        text-shadow: 0 0 6px hsl(0, 0%, 100%), 0 0 9px hsl(224, 100%, 86%), 0 0 12px hsl(224, 100%, 86%), 0 0 15px hsl(224, 100%, 86%), 0 0 18px hsl(224, 100%, 86%), 0 0 21px hsl(224, 100%, 86%), 0 0 24px hsl(224, 100%, 86%);
+    }
+    .gridproducts, .gridcontacts {
+        width: 56vw;
+    }
+    .line img {
+        border-radius: 0.85cm;
+        max-height: 180px;
+        max-width: 180px;
+    }
     .nav__links li {
         padding: 0px 8px;
     }
-}
-@media screen and (max-width:850px) {
-    .nav__links li {
-        padding: 0px 4px;
+    .welcome {
+        font-size: 75%;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0%;
+        min-height: 100%;
+        width: 20vw;
+        background-color: hsl(0, 0%, 9%);
+        position: fixed;
+        animation: boxglow 1s ease-in-out infinite alternate;
+        -webkit-animation: boxglow 1s ease-in-out infinite alternate;
+        z-index: 1;
+    }
+    section, .second_section {
+        padding-left: 32vw;
+    }
+    .myweb {
+        font-size: 330%;
+        text-align: center;
     }
     .nav__links {
-        margin-left: -1cm;
-        font-size: 90%;
+        list-style: none;
+        user-select: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        transform: translate(0, calc(-80vh + 20vw));
+    }
+    .nav__links li {
+        text-align: center;
+        font-size: 140%;
+        padding: 0.35em 0 0.35em 0;
+    }
+    .dropdown_content {
+        align-items: center;
+        height: 45.6px;
+        width: 45.6px;
+    }
+    .dropdown {
+        flex-direction: column;
+        position: absolute;
+        top: calc(50% + 20px);
+        transform: translateX(-16vw);
+    }
+    .dropdown a {
+        padding: 1vw 5px;
+    }
+}
+@media screen and (max-width:850px) {
+    .nav__links li a {
+        font-size: 1.2em;
     }
     .logo h1 {
-        font-size: 180%;
+        font-size: calc(9vw - 1.5em);
         padding-top: 8px;
     }
 }
 @media screen and (max-width:750px) {
-    .nav__links {
-        font-size: 80%;
-    }
-    .logo h1 {
-        font-size: 160%;
-        padding-top: 10px;
-    }
-}
-@media screen and (max-width:690px) {
     .nav__links li a {
-        flex-direction: column;
+        font-size: 0.85em;
+    }
+    .nav__links a:hover {
+        font-size: 85%;
     }
 }
 @keyframes boxglow {
     from {
-        box-shadow: 0 0 4px hsl(0, 0%, 100%), 0 0 7px hsl(0, 0%, 100%), 0 0 10px hsl(330, 100%, 45%), 0 0 13px hsl(330, 100%, 45%), 0 0 16px hsl(330, 100%, 45%), 0 0 19px hsl(330, 100%, 45%), 0 0 22px hsl(330, 100%, 45%);
+        box-shadow: 0 0 calc(1px + 0.6vw) hsl(0, 0%, 100%), 0 0 calc(2px + 0.6vw) hsl(0, 0%, 100%), 0 0 calc(3px + 0.6vw) hsl(330, 100%, 45%), 0 0 calc(4px + 0.6vw) hsl(330, 100%, 45%), 0 0 calc(5px + 0.6vw) hsl(330, 100%, 45%), 0 0 calc(6px + 0.6vw) hsl(330, 100%, 45%), 0 0 calc(7px + 0.6vw) hsl(330, 100%, 45%); 
     }
       
       to {
-        box-shadow: 0 0 6px hsl(0, 0%, 100%), 0 0 9px hsl(224, 100%, 86%), 0 0 12px hsl(224, 100%, 86%), 0 0 15px hsl(224, 100%, 86%), 0 0 18px hsl(224, 100%, 86%), 0 0 21px hsl(224, 100%, 86%), 0 0 24px hsl(224, 100%, 86%);
+        box-shadow: 0 0 calc(1px + 0.9vw) hsl(0, 0%, 100%), 0 0 calc(2px + 0.9vw) hsl(224, 100%, 96%), 0 0 calc(3px + 0.9vw) hsl(224, 100%, 90%), 0 0 calc(4px + 0.9vw) hsl(224, 100%, 86%), 0 0 calc(5px + 0.9vw) hsl(224, 100%, 86%), 0 0 calc(6px + 0.9vw) hsl(224, 100%, 86%), 0 0 calc(7px + 0.9vw) hsl(224, 100%, 86%);
     }
 }
 @keyframes glow {
@@ -191,32 +294,29 @@ section {
 }
 .welcome h2{
     text-align: center;
-    font-size: 5em;
-    text-shadow: 3px 3px 2px hsl(170, 29%, 8%), 0 0 0 hsl(106, 100%, 34%);
+    font-size: calc(3em + 3vw);
     font-weight: 900;
-    color: transparent;
     font-family: 'Orbitron', sans-serif;
-    background-clip: text;
+    text-shadow: 0 -2px 2px hsl(69, 100%, 53%), 0 -4px 3px hsl(51, 100%, 61%), 0 -7px 4px hsl(51, 100%, 41%), 0 -10px 5px hsl(39, 100%, 45%), 0 -12px 7px hsl(22, 100%, 53%), 0 -14px 11px hsl(17, 100%, 50%);
+    color: hsl(221, 15%, 21%);
 }
 .a__img {
     border-radius: 0.4em;
 }
 .gridcontacts {
-    width: 85%;
     margin: 0 auto;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 .gridhome {
-    width: 60%;
+    width: 56vw;    
     margin: 0 auto;
     display: grid;
     grid-gap: 2vw;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 .gridproducts {
-    width: 95%;
     margin: 0 auto;
     display: grid;
     grid-gap: 10px;
@@ -226,7 +326,7 @@ section {
     background-color: hsl(221, 15%, 21%);
     box-shadow: 0px 0px 15px hsl(221, 15%, 21%);
     padding: 1em;
-    text-align: center; 
+    text-align: center;
 }
 .line a {
     background-color: none;
@@ -240,11 +340,6 @@ section {
     margin-top: 1em;
     margin-bottom: 1em;
 }
-.line img {
-    border-radius: 1.1cm;
-    max-height: 240px;
-    max-width: 240px;
-}
 .linegap {
     height: auto;
     width: auto;
@@ -254,18 +349,16 @@ section {
     font-size: 80%;
 }
 .langflag {
-    height: 30px;
-    width: 42px;
+    height: calc(39px + 0.6vw);
+    width: calc(48px + 1.2vw);
     display: block;
-    border-radius: 4px;
-
+    border-radius: 2px;
 }
 .langflag2 {
-    height: calc(40px + 1vw);
+    height: calc(33px + 1.3vw);
     display: block;
     border-radius: 50%;
     position: absolute;
-    margin-left: 20px;
 }
 .dropdown .langflag2{
     position: absolute;
@@ -280,24 +373,20 @@ section {
     align-items: center;
 }
 .dropdown {
-    transform: translate(20px, -150%);
     position: absolute;
-    opacity: 0.9;
     z-index: 30;
     display: flex;
     right: 0;
     justify-content: space-around;
     align-items: center;
-    transition: cubic-bezier(.41,-0.08,.24,1.86) 0.25s;
+    transition: cubic-bezier(.41,-0.08,.24,1.86) 0.18s;
 }
 .dropdown a {
-    padding: 1vh 10px;
+    padding: 1vh 5px;
 
     display: flex;
 }
-.dropdown_content:hover .dropdown {
-    transform: translate(20px, 0);
-}
+
 .imgframe img {
     display: block;
     background-color: hsl(221, 15%, 21%);
