@@ -377,6 +377,14 @@ section {
     padding: 0.5vw 5% 0;
     font-size: 80%;
 }
+.line .price {
+    color: hsl(187, 79%, 72%);
+    margin-top: 1em;
+}
+.line .tag {
+    color: hsl(187, 79%, 72%);
+    font-size: 1.2em;
+}
 .langflag {
     height: calc(39px + 0.6vw);
     width: calc(48px + 1.2vw);
