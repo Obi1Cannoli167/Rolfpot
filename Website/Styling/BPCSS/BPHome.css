@@ -71,7 +71,7 @@ span {
     color: hsl(221, 30%, 11%);
 }
 .logo {
-    padding: 20px 20px 20px 100px;
+    padding: 20px 20px 20px 40px;
     letter-spacing: 8px;
 }
 .myweb {
@@ -156,25 +156,15 @@ form hr{
 form p {
     text-align: center;
 }
-
-@media screen and (min-width:1500px) {
-    .nav__links {
-        padding: 0px 8px;
-        font-size: 135%;
-    }
-    .logo {
-        font-size: 120%;
-    }
+@media screen and (min-width:1100px) {
     .logo img {
         height: 75px;
         position: relative;
         top: -6px;
     }
-    section {
-        padding-top: 14vh;
+    .logo {
+        font-size: 120%;
     }
-}
-@media screen and (min-width:1100px) {
     .fill, hr {
         width: 50%;
     }
@@ -191,7 +181,7 @@ form p {
         padding: 40px 10vw 30px 10vw;
     }
     nav {
-        padding: 20px 50px 20px 20px;
+        padding: 20px;
     }
     .contact_options {
         justify-content: center;
@@ -233,6 +223,8 @@ form p {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        padding: 0px 8px;
+        font-size: 135%;
     }
     .gridproducts, .gridcontacts {
         width: calc(96% - 3vw);
