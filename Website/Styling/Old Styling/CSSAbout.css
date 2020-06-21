@@ -1,0 +1,120 @@
+body, html {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../Images/it1636a7.bmp);
+    object-fit: cover; 
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;  
+}
+a:hover {
+    background-color: azure; color: black;
+}
+#Hedd {
+    font-size: 3cm;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1cm;
+    margin-left: 5cm;
+    margin-right: 5cm;
+    margin-bottom: auto;
+    text-align: center;
+    font-weight: 900;
+
+}
+#sect {
+    border-width: 1cm;
+    border-radius: 1em;
+    border-style: double;
+    margin-right: 2cm;
+    margin-left: 2cm;
+    border-radius: 1cm 1cm 0 0;
+}
+header {
+    background-image: url(../../Images/Aluminum-Metal-Sheet-Texture.jpg);
+    margin-left: 5cm;
+    margin-right: 5cm;
+    margin-bottom: 1cm;
+    padding-top: 1em;
+    border-radius: 20px 20px 0 0;
+    filter: opacity(0.7);
+
+
+}
+nav {
+    background-color: skyblue;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 2em;
+    opacity: 0.7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 5cm;
+    margin-right: 5cm;
+    margin-bottom: -1cm;
+}
+#hedd1 {
+    font-size: 2cm;
+    font-weight: 700;
+    text-align: center;
+    background-image: url(../../Images/Aluminum-Metal-Sheet-Texture.jpg);
+    border-radius: 0 0 20px 20px;
+    color: rgb(15, 15, 15);
+    margin-right: 4.36cm;
+    margin-left: 4.36cm;
+    margin-top: 1cm;
+    filter: brightness(1.428);
+}
+section {
+    display: block;
+    margin-top: 2cm;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 1cm;
+    padding-bottom: 1cm;
+    background-color: skyblue;
+    opacity: 0.7;
+    border-radius: 1.5cm 1.5cm 1em 1em;
+}
+p {
+    color: rgb(19, 19, 19);
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.hiliSR {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    display: inline;
+}
+.hili {
+    background-color: yellow;
+}
+#Rolf {
+    display: block;
+    height: 500px;
+    width: 250px;
+}
+#pierogi{
+    display: block;
+    width: 300px;
+    height: 200px;
+}
+#mäin {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+#mäin div {
+    flex: 1;
+
+}
+#main div:nth-of-type(2) {
+    flex-grow: 1;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+#polend {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+}
